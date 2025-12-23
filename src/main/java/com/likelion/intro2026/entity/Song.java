@@ -28,8 +28,8 @@ public class Song {
     private String lyrics;
 
     @Column(nullable = false)
-    private Integer genre;
+    private Integer genreId;
 
     @Column(nullable = false)
-    private Integer keyword;
+    private Integer keywordId;
 }
