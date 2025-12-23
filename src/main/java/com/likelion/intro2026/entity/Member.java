@@ -11,13 +11,14 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @Entity
-@Table(name="user")
-public class User {
+@Table(name="member")
+public class Member {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "user_id", nullable = false)
+    @Column(name = "member_id", nullable = false)
     private Long userId;
 
-    @Column(name = "username", nullable = false)
-    private String username;
+    @Column(name = "member_name", nullable = false)
+    private String memberName;
 }
+
