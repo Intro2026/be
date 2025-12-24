@@ -19,8 +19,8 @@ public interface SongRepository extends JpaRepository<Song, Long> {
         LIMIT 1
     """, nativeQuery = true)
     Optional<Song> findRandom(
-            @Param("genreIds") List<Integer> genreIds,
-            @Param("keywordIds") List<Integer> keywordIds
+            @Param("genreIds") List<Long> genreIds,
+            @Param("keywordIds") List<Long> keywordIds
     );
 
     @Query(value = "SELECT * FROM song ORDER BY RAND() LIMIT 1", nativeQuery = true)

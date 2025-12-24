@@ -10,7 +10,7 @@ import java.util.List;
 public class RecommendRequest {
 
     @NotEmpty
-    List<Integer> genreIds;
+    List<Long> genreIds;
     @NotEmpty
-    List<Integer> keywordIds;
+    List<Long> keywordIds;
 }
