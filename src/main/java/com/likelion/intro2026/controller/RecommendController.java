@@ -24,7 +24,7 @@ public class RecommendController {
     private final RecommendService recommendService;
 
     @Operation(
-            summary = "노래 추천",
+            summary = "노래 추천 - 김도윤",
             description = """
                 genreIds(배열), keywordIds(배열)를 받아 조건에 맞는 노래 한 곡만을 랜덤으로 반환합니다.
                 
